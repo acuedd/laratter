@@ -9,19 +9,31 @@ class PagesController extends Controller
 
 	public function home()
 	{
-		$links = [
-			"http://platzi" => "Curso laravel",
-			"http://platzi2" => "Curso laravel 2"
+		$messages = [
+			[
+				"id" => 1, 
+			"content" => "Este es mi primer mensaje!", 
+			"image" => "http://lorempixel.com/600/338?1",
+			],
+			[
+				"id" => 2, 
+			"content" => "Este es mi segundo mensaje!", 
+			"image" => "http://lorempixel.com/600/338?2",
+			],
+			[
+				"id" => 2, 
+			"content" => "Este es mi tercer mensaje!", 
+			"image" => "http://lorempixel.com/600/338?3",
+			],
+			[
+				"id" => 4, 
+			"content" => "Este es mi cuarto mensaje!", 
+			"image" => "http://lorempixel.com/600/338?4",
+			],
 		];
 
 	    return view('welcome', [
-	    	//"teacher"=> "Edward Acu",
-	    	"links" =>$links,
+	    	"messages" => $messages
 	    ]);
-	}
-
-	public function about()
-	{
-		return view("about");
 	}
 }
