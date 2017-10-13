@@ -3,34 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Message;
 
 class PagesController extends Controller
 {    
 
 	public function home()
 	{
-		$messages = [
-			[
-				"id" => 1, 
-			"content" => "Este es mi primer mensaje!", 
-			"image" => "http://lorempixel.com/600/338?1",
-			],
-			[
-				"id" => 2, 
-			"content" => "Este es mi segundo mensaje!", 
-			"image" => "http://lorempixel.com/600/338?2",
-			],
-			[
-				"id" => 2, 
-			"content" => "Este es mi tercer mensaje!", 
-			"image" => "http://lorempixel.com/600/338?3",
-			],
-			[
-				"id" => 4, 
-			"content" => "Este es mi cuarto mensaje!", 
-			"image" => "http://lorempixel.com/600/338?4",
-			],
-		];
+		$messages = Message::orderBy("id","DESC")->paginate(10);
 
 	    return view('welcome', [
 	    	"messages" => $messages

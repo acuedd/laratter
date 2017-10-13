@@ -19,7 +19,16 @@ $factory->define(App\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
+	    "username" => $faker->userName,
         'password' => $password ?: $password = bcrypt('secret'),
         'remember_token' => str_random(10),
+	    "avatar" => $faker->imageUrl(300,300,"people")
     ];
+});
+
+$factory->define(App\Message::class, function(Faker $faker) {
+	return [
+		"content" => $faker->realText(random_int(20,160)),
+		"image" => $faker->imageUrl(600, 338),
+	];
 });
