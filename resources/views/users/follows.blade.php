@@ -1,13 +1,13 @@
 @extends("layouts.app")
 
 @section("content")
-
-    @foreach($user->follows as $follow)
-
+<h> {{ $user->name }} </h>
+<ul class="list-unstyled">
+    @foreach($follows as $follow)
         <li>
             {{ $follow->username }}
         </li>
 
     @endforeach
-
+</ul>
 @endsection
