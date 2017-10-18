@@ -337,6 +337,7 @@ class ComposerStaticInitef99f8291fbee4bf20aebeaa92ee6410
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Conversation' => __DIR__ . '/../..' . '/app/Conversation.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -356,6 +357,7 @@ class ComposerStaticInitef99f8291fbee4bf20aebeaa92ee6410
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\CreateMessageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateMessageRequest.php',
         'App\\Message' => __DIR__ . '/../..' . '/app/Message.php',
+        'App\\PrivateMessage' => __DIR__ . '/../..' . '/app/PrivateMessage.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
