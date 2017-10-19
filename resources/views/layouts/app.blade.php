@@ -31,7 +31,18 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    &nbsp;
+                    <li class="nav-item">
+                        <form action="/messages">
+                            <div class="input-group">
+                                <input type="text" name="query" class="form-control" placeholder="Buscar..." required>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-outline-success">
+                                        Buscar
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -58,7 +69,7 @@
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
+
                                 </form>
                             </div>
                         </li>
