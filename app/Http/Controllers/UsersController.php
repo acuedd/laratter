@@ -6,6 +6,7 @@ use App\Conversation;
 use App\PrivateMessage;
 use App\User;
 use Illuminate\Http\Request;
+use Mockery\Exception;
 
 class UsersController extends Controller
 {
@@ -80,6 +81,6 @@ class UsersController extends Controller
 
     private function findByUsername($username)
     {
-	    return User::where("username",$username)->first();
+	    return User::where("username",$username)->firstOrFail();
     }
 }
