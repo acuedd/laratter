@@ -399,6 +399,7 @@ class ComposerStaticInitef99f8291fbee4bf20aebeaa92ee6410
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\CreateMessageRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CreateMessageRequest.php',
         'App\\Message' => __DIR__ . '/../..' . '/app/Message.php',
+        'App\\Notifications\\UserFollowed' => __DIR__ . '/../..' . '/app/Notifications/UserFollowed.php',
         'App\\PrivateMessage' => __DIR__ . '/../..' . '/app/PrivateMessage.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',

@@ -43,6 +43,7 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Requests\\CreateMessageRequest' => $baseDir . '/app/Http/Requests/CreateMessageRequest.php',
     'App\\Message' => $baseDir . '/app/Message.php',
+    'App\\Notifications\\UserFollowed' => $baseDir . '/app/Notifications/UserFollowed.php',
     'App\\PrivateMessage' => $baseDir . '/app/PrivateMessage.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
