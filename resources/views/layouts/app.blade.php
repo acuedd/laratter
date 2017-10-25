@@ -48,13 +48,19 @@
                 <ul class="nav navbar-nav ml-auto">
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li class="nav-item">
+                        <li class="nav-item mr-2">
                             <a class="nav-link" href="{{ route('login') }}">Entrar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('register') }}">Registrarse</a>
                         </li>
                     @else
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Notificaciones <span class="caret   "></span>
+                            </a>
+                            <notifications :user="{{ Auth::user()->id }}"></notifications>
+                        </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
